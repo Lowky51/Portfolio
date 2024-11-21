@@ -1,5 +1,4 @@
 /****** BODY  *******/
-
 body {
   background-color: black;
   font-family: "Orbitron", sans-serif;
@@ -10,18 +9,12 @@ body {
   margin: 0;
   justify-content: center;
   align-items: center;
-
-
 }
 
-
 /********** NAVBAR ***********/
-
-
 .navbar {
   width: 75vh;
   border-radius: 15px;
-  /* display: flex; */
   justify-content: space-between;
   align-items: center;
   padding: 1em;
@@ -31,8 +24,8 @@ body {
   float: right;
   margin-top: 1vh;
   margin-right: 20vh;
+  display: flex;
 }
-
 
 .navbar-menu {
   display: flex;
@@ -47,20 +40,16 @@ body {
   transition: background-color 0.3s;
 }
 
-
-
 .navbar-menu a:hover {
   background-color: #555;
   border-radius: 15px;
 }
-
 
 .burger {
   display: none;
 }
 
 /* ETAT PAR DEFAUT */
-
 label #burger {
   width: 50px;
   height: 50px;
@@ -78,36 +67,25 @@ label #burger div {
   width: 80%;
   height: 10%;
   border-radius: 20px;
-  /*  trnasition: propriété / durée / délai d'attente  */
   transition: top 0.5s 0.5s, width 0.5s 0.75s, transform 0.5s;
-
-
 }
-
-/* grace au combinateur "+", on peut chercher un élément qui en suit directement un autre, ici :
-on désigne un bouton qui se trouverait juste apres une case a cocher cochée  */
 
 #case_secrete:checked+label #burger div {
   transition: top 0.5s 0.25s, width 0.5s, transform 0.5s 0.75s;
-
 }
 
 label #burger div:first-child {
   top: 30%;
-
 }
-
 
 label #burger div:last-child {
   top: 70%;
 }
 
 /********* ETAT 2 ********/
-
 #case_secrete:checked+label #burger div:first-child,
 #case_secrete:checked+label #burger div:last-child {
   top: 50%;
-
 }
 
 #case_secrete:checked+label #burger div:nth-child(2) {
@@ -117,16 +95,11 @@ label #burger div:last-child {
 
 #case_secrete:checked+label #burger div:first-child {
   transform: translate(-50%, -50%) rotate(45deg);
-
 }
 
 #case_secrete:checked+label #burger div:last-child {
   transform: translate(-50%, -50%) rotate(-45deg);
-
 }
-
-/********************************/
-
 
 #case_secrete {
   display: none;
@@ -137,43 +110,36 @@ label {
   width: fit-content;
 }
 
-
 /* Styles responsive */
 @media (max-width: 768px) {
-
   .navbar {
-    width: calc(90% - 20px);
-    /* Largeur réduite avec une marge de chaque côté de 10px */
-    margin: 125px;
-    /* Marge de chaque côté de 10px */
-    flex-direction: column;
-    align-items: flex-start;
+      width: calc(100% - 20px); /* Largeur réduite avec une marge de chaque côté de 10px */
+      margin: 10px; /* Marge de chaque côté de 10px */
+      flex-direction: column;
+      align-items: flex-start;
   }
 
-
   .navbar-menu {
-    display: none;
-    flex-direction: column;
-    width: 25vh;
-    position: absolute;
-    top: 100px;
-    left: 0;
-    background-color: #333;
-    padding: 1em 0;
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      background-color: #333;
+      padding: 1em 0;
   }
 
   .navbar-menu.active {
-    display: flex;
+      display: flex;
   }
 
   .burger {
-    display: block;
+      display: block;
   }
 }
 
-
 /****** H1  *******/
-
 .css-typing {
   margin-top: 1vw;
   margin-left: 5vw;
@@ -195,14 +161,12 @@ label {
   animation-fill-mode: forwards;
 }
 
-
 .css-typing h1:last-child {
-
   color: white;
   border-right: .15em solid white;
   white-space: nowrap;
   overflow: hidden;
-  width: 6em;
+  width: 5.5em;
   opacity: 0;
   -webkit-animation: type4 2s steps(20, end), blink .2s step-end infinite alternate;
   animation: type4 3s steps(20, end), blink .3s step-end infinite alternate;
@@ -213,80 +177,67 @@ label {
   margin: auto;
 }
 
-
 @keyframes type3 {
   0% {
-    width: 0;
+      width: 0;
   }
-
   1% {
-    opacity: 1;
+      opacity: 1;
   }
-
   100% {
-    opacity: 1;
-    border: none;
+      opacity: 1;
+      border: none;
   }
 }
 
 @-webkit-keyframes type3 {
   0% {
-    width: 0;
+      width: 0;
   }
-
   1% {
-    opacity: 1;
-
+      opacity: 1;
   }
-
   100% {
-    opacity: 1;
-    border: none;
+      opacity: 1;
+      border: none;
   }
 }
 
 @keyframes type4 {
   0% {
-    width: 0;
+      width: 0;
   }
-
   1% {
-    opacity: 1;
+      opacity: 1;
   }
-
   100% {
-    opacity: 1;
+      opacity: 1;
   }
 }
 
 @-webkit-keyframes type4 {
   0% {
-    width: 0;
+      width: 0;
   }
-
   1% {
-    opacity: 1;
+      opacity: 1;
   }
-
   100% {
-    opacity: 1;
-
+      opacity: 1;
   }
 }
 
 @keyframes blink {
   50% {
-    border-color: transparent;
+      border-color: transparent;
   }
 }
 
 @-webkit-keyframes blink {
   50% {
-    border-color: tranparent;
+      border-color: transparent;
   }
 }
-
-
 
 .container {
   display: flex;
@@ -294,9 +245,7 @@ label {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  /* Assure que le conteneur prend toute la hauteur de la vue */
   width: 100vw;
-  /* Assure que le conteneur prend toute la largeur de la vue */
   margin-top: -10vh;
 }
 
@@ -342,54 +291,86 @@ label {
 
 /* Responsive Design */
 @media (max-width: 1200px) {
-
-
   .navbar {
-    float: none;
-    margin: 0;
-    margin: auto;
-    margin-top: 5vh;
+      float: none;
+      margin: 0;
+      margin: auto;
+      margin-top: 5vh;
   }
-
 
   .css-typing {
-    margin: auto;
-    margin-top: 2vh;
+      margin: auto;
+      margin-top: 2vh;
   }
 
-
-
   .container {
-    flex-direction: column;
-    gap: 0;
-
-    height: 1300px;
+      flex-direction: column;
+      gap: 0;
+      height: 1300px;
   }
 
   .square {
-    width: 55vh;
-    height: 70vh;
-    margin: auto;
-    margin-top: 12vh;
+      width: 55vh;
+      height: 70vh;
+      margin: auto;
+      margin-top: 12vh;
   }
 
   .square h2 {
-    margin-top: -1vh;
-    margin-bottom: -1vh;
+      margin-top: -1vh;
+      margin-bottom: -1vh;
   }
 
-
   .line {
-    width: 1vh;
-    height: 20vh;
-    /* Hauteur fixe pour le tiret */
-    margin: auto;
+      width: 1vh;
+      height: 15vh;
+      margin: auto;
   }
 
   .circle {
+      margin: auto;
+      width: 50vh;
+      height: 50vh;
+  }
+}
 
+@media (max-width: 550px) {
+  .container {
+      width: calc(80% - 20px); /* Largeur réduite avec une marge de chaque côté de 10px */
+      margin: 10px; /* Marge de chaque côté de 10px */
+      flex-direction: column;
+      align-items: center;
+      margin: auto;
+      margin-top: -5vh;
+  }
+
+  .css-typing h1 {
+    font-size: 1.7em;
     margin: auto;
-    width: 50vh;
-    height: 50vh;
+  }
+
+  .square {
+      width: 100%;
+      height: 70%;
+      margin: auto;
+      margin-top: 10vh;
+  }
+
+  .square h2 {
+    margin-top: 1vh;
+    font-size: 2em;
+  }
+
+  .line {
+      width: 1vh;
+      height: 10vh;
+      margin: auto;
+  }
+
+  .circle {
+    margin: 0;
+      margin: auto;
+      width: 100%;
+      height: 25%;
   }
 }
