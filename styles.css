@@ -113,7 +113,7 @@ label {
 /* Styles responsive */
 @media (max-width: 768px) {
   .navbar {
-      width: calc(100% - 20px); /* Largeur réduite avec une marge de chaque côté de 10px */
+      width: calc(80% - 20px); /* Largeur réduite avec une marge de chaque côté de 10px */
       margin: 10px; /* Marge de chaque côté de 10px */
       flex-direction: column;
       align-items: flex-start;
@@ -122,8 +122,9 @@ label {
   .navbar-menu {
       display: none;
       flex-direction: column;
-      width: 100%;
+      width: 25vh;
       position: absolute;
+      z-index: 1000;
       top: 100px;
       left: 0;
       background-color: #333;
@@ -166,7 +167,7 @@ label {
   border-right: .15em solid white;
   white-space: nowrap;
   overflow: hidden;
-  width: 5.5em;
+  width: 6em;
   opacity: 0;
   -webkit-animation: type4 2s steps(20, end), blink .2s step-end infinite alternate;
   animation: type4 3s steps(20, end), blink .3s step-end infinite alternate;
@@ -314,6 +315,8 @@ label {
       height: 70vh;
       margin: auto;
       margin-top: 12vh;
+      margin-bottom: 0;
+
   }
 
   .square h2 {
@@ -325,10 +328,14 @@ label {
       width: 1vh;
       height: 15vh;
       margin: auto;
+      margin-bottom: 0;
+      margin-top: 0;
   }
 
   .circle {
       margin: auto;
+      margin-top: 0;
+
       width: 50vh;
       height: 50vh;
   }
@@ -337,7 +344,7 @@ label {
 @media (max-width: 550px) {
   .container {
       width: calc(80% - 20px); /* Largeur réduite avec une marge de chaque côté de 10px */
-      margin: 10px; /* Marge de chaque côté de 10px */
+
       flex-direction: column;
       align-items: center;
       margin: auto;
@@ -351,9 +358,10 @@ label {
 
   .square {
       width: 100%;
-      height: 70%;
+      height: auto;
       margin: auto;
       margin-top: 10vh;
+      margin-bottom: 0;
   }
 
   .square h2 {
@@ -365,11 +373,14 @@ label {
       width: 1vh;
       height: 10vh;
       margin: auto;
+      margin-bottom: 0;
+      margin-top: 0;
   }
 
   .circle {
-    margin: 0;
+      
       margin: auto;
+      margin-top: 0;
       width: 100%;
       height: 25%;
   }
