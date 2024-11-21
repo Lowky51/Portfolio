@@ -16,10 +16,10 @@
 
 <header class="navbar">
     <nav class="navbar-menu" id="navbar-menu">
-        <a href="#home">Profil</a>
-        <a href="#services">Compétences</a>
-        <a href="#about">Projets</a>
-        <a href="#contact">Contact</a>
+        <button id="scrollProfil" ><a href="#home">Profil</a></button>
+        <button id="scrollCompetence" > <a href="#services">Compétences</a></button>
+        <button id="scrollProjet" ><a>Projets</a></button>
+        <button><a href="#contact">Contact</a></button>
         
     </nav>
     <input id="case_secrete" type="checkbox"> <label for="case_secrete">
@@ -27,7 +27,7 @@
         <div class="burger" id="burger" >
             <div></div>
             <div></div>
-            <div></div>
+            <div></div> 
         </div>
 
     </label>
@@ -44,7 +44,7 @@
 
 
 
-    <div class="container">
+    <div  id="profil" class="container">
         <div class="square">
             <h2>FLEAUX Allan</h2>
 
@@ -55,6 +55,62 @@
         <div class="line"></div>
         <div class="circle"></div>
     </div>
+
+    <section  id="competence" class="competences">
+        <div class="title-container">
+            <h2>Compétences</h2>
+        </div>
+        
+        <div class="front-end" >
+            <h2>FRONT-END</h2>
+            <div class="icon-front-end" >
+                <img src="images/html.png" alt="">
+                <p>70%</p>
+                <img src="images/javascript.png" alt="">
+                <p>30%</p>
+                <img src="images/css.png" alt="">
+                <p>65%</p>
+            </div>
+            <div class="pourcent-front-end" >
+                <p>70%</p>
+                <p>30%</p>
+                <p>65%</p>
+            </div>
+            <div class="line_2"></div>
+
+            <div class="back-end" >
+                <h2>BACK-END</h2>
+                <div class="icon-front-end" >
+                    <img src="images/php.png" alt="">
+                    <img src="images/sql.png" alt="">
+                </div>
+                <div class="pourcent-front-end" >
+                    <p>10%</p>
+                    <p>10%</p>
+                </div>
+            </div>
+
+            <div id="competence" class="line_2"></div>
+
+            <div class="logiciel" >
+                <h2>LOGICIEL</h2>
+                <div class="icon-front-end" >
+                    <img src="images/figma.png" alt="">
+                    <img src="images/AI.png" alt="">
+                    <img src="images/vscode.png" alt="">
+                </div>
+                <div class="pourcent-front-end" >
+                    <p>70%</p>
+                    <p>60%</p>
+                    <p>90%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projet" class="projet" >
+        <div class="title-container" ><h2>PROJETS</h2></div>
+    </section>
 
     <script src="script.js" ></script>
 </body>
