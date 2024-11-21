@@ -572,15 +572,17 @@ label {
 
 @media (max-width: 650px) {
   .competences {
-    width: calc(90% - 30px);
+    width: calc(90% - 20px);
     /* Largeur réduite avec une marge de chaque côté de 10px */
     flex-direction: column;
     align-items: center;
     margin: auto;
+    height: 230vh;
     border: red solid;
   }
 
   .front-end {
+    margin-left: -0.9vh;
     height: 70%;
     width: 80vw;
     font-size: 1.8em;
@@ -620,7 +622,7 @@ label {
 
   .line_2 {
     margin: auto;
-    margin-top: 33.2vh;
+    margin-top: 36.2vh;
   }
 }
 
@@ -642,6 +644,11 @@ label {
     font-size: 1.8em;
 
   }
+
+  .line_2 {
+    margin: auto;
+    margin-top: 27.2vh;
+  }
 }
 
 @media (max-width: 400px) {
@@ -652,6 +659,11 @@ label {
     font-size: 1.8em;
 
   }
+
+  .line_2 {
+    margin: auto;
+    margin-top: 24.2vh;
+  }
 }
 
 @media (max-width: 350px) {
@@ -661,5 +673,10 @@ label {
     width: 80vw;
     font-size: 1.8em;
 
+  }
+
+  .line_2 {
+    margin: auto;
+    margin-top: 17vh;
   }
 }
