@@ -1,0 +1,395 @@
+/****** BODY  *******/
+
+body {
+  background-color: black;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  height: 100%;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+/********** NAVBAR ***********/
+
+
+.navbar {
+  width: 75vh;
+  border-radius: 15px;
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: #333;
+  color: white;
+  border: white solid 3px;
+  float: right;
+  margin-top: 1vh;
+  margin-right: 20vh;
+}
+
+
+.navbar-menu {
+  display: flex;
+  gap: 1em;
+}
+
+.navbar-menu a {
+  font-size: 1.4em;
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  transition: background-color 0.3s;
+}
+
+
+
+.navbar-menu a:hover {
+  background-color: #555;
+  border-radius: 15px;
+}
+
+
+.burger {
+  display: none;
+}
+
+/* ETAT PAR DEFAUT */
+
+label #burger {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background: none;
+  border: none;
+}
+
+label #burger div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 80%;
+  height: 10%;
+  border-radius: 20px;
+  /*  trnasition: propriété / durée / délai d'attente  */
+  transition: top 0.5s 0.5s, width 0.5s 0.75s, transform 0.5s;
+
+
+}
+
+/* grace au combinateur "+", on peut chercher un élément qui en suit directement un autre, ici :
+on désigne un bouton qui se trouverait juste apres une case a cocher cochée  */
+
+#case_secrete:checked+label #burger div {
+  transition: top 0.5s 0.25s, width 0.5s, transform 0.5s 0.75s;
+
+}
+
+label #burger div:first-child {
+  top: 30%;
+
+}
+
+
+label #burger div:last-child {
+  top: 70%;
+}
+
+/********* ETAT 2 ********/
+
+#case_secrete:checked+label #burger div:first-child,
+#case_secrete:checked+label #burger div:last-child {
+  top: 50%;
+
+}
+
+#case_secrete:checked+label #burger div:nth-child(2) {
+  width: 40%;
+  width: 0;
+}
+
+#case_secrete:checked+label #burger div:first-child {
+  transform: translate(-50%, -50%) rotate(45deg);
+
+}
+
+#case_secrete:checked+label #burger div:last-child {
+  transform: translate(-50%, -50%) rotate(-45deg);
+
+}
+
+/********************************/
+
+
+#case_secrete {
+  display: none;
+}
+
+label {
+  display: block;
+  width: fit-content;
+}
+
+
+/* Styles responsive */
+@media (max-width: 768px) {
+
+  .navbar {
+    width: calc(90% - 20px);
+    /* Largeur réduite avec une marge de chaque côté de 10px */
+    margin: 125px;
+    /* Marge de chaque côté de 10px */
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    width: 25vh;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    background-color: #333;
+    padding: 1em 0;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+
+/****** H1  *******/
+
+.css-typing {
+  margin-top: 1vw;
+  margin-left: 5vw;
+  width: 25em;
+}
+
+.css-typing h1:first-child {
+  color: white;
+  border-right: .15em solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 13em;
+  opacity: 0;
+  -webkit-animation: type3 3s steps(20, end), blink .3s step-end infinite alternate;
+  animation: type3 3s steps(20, end), blink .3s step-end infinite alternate;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+
+.css-typing h1:last-child {
+
+  color: white;
+  border-right: .15em solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 6em;
+  opacity: 0;
+  -webkit-animation: type4 2s steps(20, end), blink .2s step-end infinite alternate;
+  animation: type4 3s steps(20, end), blink .3s step-end infinite alternate;
+  -webkit-animation-delay: 2.9s;
+  animation-delay: 2.9s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  margin: auto;
+}
+
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    opacity: 1;
+
+  }
+
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type4 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type4 {
+  0% {
+    width: 0;
+  }
+
+  1% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Assure que le conteneur prend toute la hauteur de la vue */
+  width: 100vw;
+  /* Assure que le conteneur prend toute la largeur de la vue */
+  margin-top: -10vh;
+}
+
+.square {
+  width: 60vh;
+  height: 60vh;
+  border-radius: 15px;
+  border: 5px white solid;
+  background-color: #525050;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.square h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5em;
+  margin: 0;
+  margin-top: -5vh;
+}
+
+.square p {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 5vh;
+}
+
+.line {
+  width: 20vh;
+  height: 1vh;
+  background-color: white;
+}
+
+.circle {
+  width: 50vh;
+  height: 50vh;
+  background-color: #525050;
+  border-radius: 50%;
+  border: 5px white solid;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+
+
+  .navbar {
+    float: none;
+    margin: 0;
+    margin: auto;
+    margin-top: 5vh;
+  }
+
+
+  .css-typing {
+    margin: auto;
+    margin-top: 2vh;
+  }
+
+
+
+  .container {
+    flex-direction: column;
+    gap: 0;
+
+    height: 1300px;
+  }
+
+  .square {
+    width: 55vh;
+    height: 70vh;
+    margin: auto;
+    margin-top: 12vh;
+  }
+
+  .square h2 {
+    margin-top: -1vh;
+    margin-bottom: -1vh;
+  }
+
+
+  .line {
+    width: 1vh;
+    height: 20vh;
+    /* Hauteur fixe pour le tiret */
+    margin: auto;
+  }
+
+  .circle {
+
+    margin: auto;
+    width: 50vh;
+    height: 50vh;
+  }
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_scss.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=MedievalSharp&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <title>Portfolio Dev Full Stack</title>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <nav class="navbar-menu" id="navbar-menu">
+            <a href="#home">Profil</a>
+            <a href="#services">Compétences</a>
+            <a href="#about">Projets</a>
+            <a href="#contact">Contact</a>
+            
+        </nav>
+        <input id="case_secrete" type="checkbox"> <label for="case_secrete">
+
+            <div class="burger" id="burger" >
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+    
+        </label>
+    </header>
+<br><br><br>
+    <div class="css-typing">
+        <h1>
+            Portfolio Developpeur
+        </h1>
+        <h1>
+            Full-Stack
+        </h1>
+      </div>
+
+
+      <div class="container_profil" >
+
+        <div class="presentation" >
+            <h2>FLEAUX Allan</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, ut velit aperiam quod nisi cumque rem, dicta quas nulla repudiandae suscipit. Qui laudantium commodi enim asperiores magni esse nesciunt. Libero?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas at porro repellat tempora modi dignissimos amet qui. Repellendus nobis ratione voluptas, eveniet deleniti hic doloribus omnis, fuga nemo illo dolorem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore corporis numquam praesentium! Illum hic voluptatem laborum maiores vel veritatis soluta necessitatibus nostrum ad, placeat reprehenderit sed ratione recusandae, temporibus cumque?</p>
+
+            
+        </div>
+
+        <div class="tiret" ></div>
+
+        <div class="rond_photo" >
+            <h2>PHOTO</h2>
+        </div>
+
+        
+
+      </div>
+      /* .container_profil {
+        margin: auto;
+        width: 75%;
+        height: auto;
+        margin-top: 5vw;
+      
+      }
+      
+      .presentation {
+        max-width: 100%;
+        width: 45%;
+        height: 100%;
+        border-radius: 15px;
+        border: white solid;
+        background-color: #525050;
+      
+      }
+      
+      .presentation h2 {
+        text-align: center;
+        font-size: 3.5em;
+      }
+      
+      .presentation p {
+        text-align: center;
+        font-size: 1em;
+      }
+      
+      .tiret {
+        border-bottom: white 3px solid;
+        width: 15%;
+        margin-left: 33.8%;
+        top: 50%;
+        display: flex;
+        position: absolute
+      }
+      
+      .rond_photo {
+        border: white solid;
+        background-color: #525050;
+        border-radius: 50%;
+        width: 32vh;
+        height: 32vh;
+        display: flex;
+        position: absolute;
+        margin-left: 48.8%;
+        top: 35%;
+      }
+      
+      .rond_photo h2 {
+        margin-left: 10vh;
+        margin-top: 13vh;
+      }
+      
+      @media (max-width: 1200px) {
+        .css-typing {
+          margin: auto;
+          margin-top: 0;
+      
+      
+      
+        }
+      
+        .navbar {
+          margin: auto;
+          float: initial;
+        }
+      
+        .presentation {
+          width: 60%;
+          height: 40vh;
+          margin-left: -10%;
+          font-size: 0.8em;
+        }
+      
+        .tiret {
+          margin-left: 37.3%;
+        }
+      
+        .rond_photo {
+          margin-right: 5%;
+        }
+      }
+      
+      @media (max-width: 800px) {
+        .container_profil {
+          display: flex;
+        }
+      
+        .presentation {
+          margin: 0;
+          margin-left: 25%;
+      
+        }
+      
+        .presentation P {
+          margin: 0;
+          margin: auto;
+          font-size: 0.7em;
+        }
+      
+        .presentation h2 {
+          margin: 0;
+          margin: auto;
+          font-size: 1em;
+        }
+      
+        .rond_photo {
+          margin: 0;
+          top: 0;
+          margin: auto;
+          margin-top: 100vh;
+        }
+      
+        .tiret {
+          border-bottom: 0;
+          margin: 0;
+          border-right: 3px white solid;
+          height: 15%;
+          margin-top: 28vh;
+          margin-left: 15vh;
+      
+        }
+      }
+      
+      @media (max-width: 600px) {
+      
+        body {
+          display: grid;
+          place-items: center;
+        }
+      
+        .css-typing h1:first-child {
+          margin: 0;
+          margin: auto;
+        }
+      
+        .css-typing h1:last-child {}
+      
+        .presentation {
+          margin: 0;
+          width: 80%;
+          height: 50%;
+          font-size: 1.5em;
+          margin: auto;
+          margin-top: 0;
+      
+        }
+      
+        .presentation h2 {
+          font-size: 1.7em;
+          margin-bottom: 3vh;
+          margin-top: 2vh;
+        }
+      
+        .tiret {
+          width: 15%;
+          margin-left: 30vh;
+          top: 55.8%;
+          
+        }
+      
+        .rond_photo {
+          top: 6.4vh;
+          left: 18vh;
+          width: 40vh;
+          height: 40vh;
+          
+        }
+      
+        
+      
+        .container_profil {
+      
+          border: solid white;
+          margin: 0;
+          margin-top: 5vh;
+          width: 90%;
+          height: 100vh;
+      
+        }
+      } */
+      
+      
+
+
+
+</body>
+
+</html>
