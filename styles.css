@@ -306,6 +306,11 @@ label {
   border: 5px white solid;
 }
 
+
+.circle img {
+  max-width: 100%;
+}
+
 /* Responsive Design */
 @media (max-width: 1200px) {
   .navbar {
@@ -555,16 +560,6 @@ label {
   margin-top: 7px;
 }
 
-.projet {
-  width: 100%;
-  height: 100vh;
-  max-width: 1200px;
-  /* Largeur maximale pour les grands écrans */
-  padding: 20px;
-  box-sizing: border-box;
-  margin: auto;
-  border: red solid;
-}
 
 .icon-front-end  p {
   display: none;
@@ -679,4 +674,267 @@ label {
     margin: auto;
     margin-top: 17vh;
   }
+}
+
+/********** PROJET **********/
+
+.projet {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.carre-projet {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5vh;
+  flex-wrap: wrap; /* Ajoutez cette propriété pour permettre aux éléments de s'enrouler sur plusieurs lignes */
+}
+
+.carre-projet div:first-child, .carre-projet div:nth-child(2), .carre-projet div:last-child {
+  border: white solid 5px;
+  background-color: #525050;
+  border-radius: 20px;
+  height: 35vh;
+  width: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Ajoutez une marge en bas pour espacer les éléments enroulés */
+}
+
+.carre-projet div:first-child img:first-child {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-top: 5vh;
+}
+
+.carre-projet div:first-child img:nth-child(2) {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  margin-top: 0vh;
+}
+
+.carre-projet div:first-child button, .carre-projet div:nth-child(2) button, .carre-projet div:nth-child(3) button:last-child {
+  margin: 0;
+  padding: 10px;
+  margin: auto;
+  color: white;
+  margin-bottom: 2vh;
+  font-size: 1.5em;
+  border: none;
+  background-color: black;
+  border: white solid 1px;
+  border-radius: 15px;
+  width: 80%;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.carre-projet div:nth-child(3) img {
+  width: 40%;
+  margin: auto;
+}
+
+.carre-projet div:nth-child(3) p:first-child {
+  margin: auto;
+  font-size: 1.3em;
+  margin-top: 5vh;
+  margin-bottom: -1vh;
+}
+
+/* Media Queries */
+
+@media (max-width: 1080px) {
+
+  .carre-projet div:first-child, .carre-projet div:last-child, .carre-projet div:nth-child(2) {
+    margin: auto;
+    margin-bottom: 2vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .carre-projet div:first-child, .carre-projet div:nth-child(2), .carre-projet div:last-child {
+    width: 45%;
+    height: 45vh;
+  }
+
+  
+  .carre-projet div:first-child img:first-child, .carre-projet div:nth-child(3) img {
+    width: 80%;
+  }
+
+  .carre-projet div:nth-child(3) img {
+    width: 60%;
+}
+
+  .carre-projet div:first-child button, .carre-projet div:nth-child(2) button, .carre-projet div:nth-child(3) button:last-child {
+    width: 60%;
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 550px) {
+  .carre-projet div:first-child, .carre-projet div:nth-child(2), .carre-projet div:last-child {
+    width: 100%;
+    height: 50vh;
+  }
+
+
+  .carre-projet div:nth-child(3) img {
+    width: 60%;
+}
+
+  .carre-projet div:first-child button, .carre-projet div:nth-child(2) button, .carre-projet div:nth-child(3) button:last-child {
+    width: 60%;
+    font-size: 1em;
+  }
+}
+
+
+.contact {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.contact h3 {
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5vh auto;
+}
+
+input[type="text"], textarea, input[type="email"] {
+  text-align: center;
+  display: block;
+  margin: 10px auto;
+  font-size: 1.5em;
+  font-family: inherit;
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  height: 40px;
+  border: none;
+}
+
+textarea {
+  width: 80%;
+  max-width: 600px;
+  height: 300px;
+}
+
+.contact button {
+  display: flex;
+  margin: 20px auto;
+  font-family: inherit;
+  font-size: 1.5em;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 15px;
+  color: white;
+  background-color: black;
+  border: white solid 2px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .contact h3 {
+    font-size: 1.5em;
+  }
+
+  input[type="text"], textarea, input[type="email"] {
+    font-size: 1.2em;
+    width: 90%;
+    max-width: 300px;
+    height: 40px;
+  }
+
+  textarea {
+    width: 90%;
+    max-width: 300px;
+    height: 150px;
+  }
+
+  .contact button {
+    font-size: 1.2em;
+    width: 120px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact h3 {
+    font-size: 1.2em;
+  }
+
+  input[type="text"], textarea, input[type="email"] {
+    font-size: 1em;
+    width: 95%;
+    max-width: 250px;
+    height: 35px;
+  }
+
+  textarea {
+    width: 95%;
+    max-width: 250px;
+    height: 120px;
+  }
+
+  .contact button {
+    font-size: 1em;
+    width: 100px;
+    height: 35px;
+  }
+}
+
+
+/* Style pour le pop-up */
+.popup {
+  display: none; /* Masque le pop-up par défaut */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.popup-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 300px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
