@@ -1,0 +1,163 @@
+.en-savoir-plus {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 40vw;
+    border: black solid 5px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 15px;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1500px) {
+    .en-savoir-plus {
+        width: 90vw;
+        height: 50vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .en-savoir-plus {
+        width: 90vw;
+        height: 100vw;
+    }
+
+    
+}
+
+@media (max-width: 500px) {
+    .en-savoir-plus {
+        width: 90vw;
+        height: 150vw;
+    }
+}
+
+.plus-content {
+    display: flex;
+    
+}
+
+.button-plus {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vh;
+    width: 100%;
+}
+
+.button-plus button a {
+    text-decoration: none;
+    color: white;
+}
+
+.button-plus button {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+    margin-bottom: 2vh;
+    font-size: 1.5em;
+    border: none;
+    background-color: black;
+    border: white solid 1px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: inherit;
+    width: 45%;
+}
+
+.button-plus button:first-child, .button-plus button:nth-child(2) {
+    margin-left: 2.5%;
+}
+
+.button-plus button:nth-child(2) {
+    margin-left: 0;
+}
+
+.button-plus button:last-child {
+    margin-right: 2.5%;
+}
+
+.plus-content img {
+    width: 50%;
+}
+
+.logo_langue {
+    display: flex;
+    margin-top: 8px;
+}
+
+.logo_langue img {
+    margin: auto;
+    width: 10%;
+}
+
+
+
+@media (max-width: 920px) {
+    .en-savoir-plus {
+        height: 58vw;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .en-savoir-plus {
+        height: 100vw;
+    }
+
+    .button-plus {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-plus button {
+        width: 80%;
+        margin-bottom: 2vh;
+    }
+
+    .button-plus button:last-child {
+        margin-bottom: 0;
+    }
+
+    .plus-content {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .plus-content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .logo_langue img {
+        margin: auto;
+        width: 30%;
+    }
+}
+
+@media (max-width: 670px) {
+    .en-savoir-plus {
+        height: 120vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .en-savoir-plus {
+        height: 150vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .en-savoir-plus {
+        height: 170vw;
+    }
+}
+

@@ -11,6 +11,7 @@
         rel="stylesheet">
     <title>Portfolio FLEAUX Allan</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ensavoirplus.css">
 </head>
 
 <body>
@@ -83,41 +84,41 @@
                 <p>65%</p>
             </div>
         </div>
-            <div class="line_2"></div>
+        <div class="line_2"></div>
 
-            <div class="back-end">
-                <h2>BACK-END</h2>
-                <div class="icon-front-end">
-                    <img src="images/php.png" alt="">
-                    <p>10%</p>
-                    <img src="images/sql.png" alt="">
-                    <p>10%</p>
-                </div>
-                <div class="pourcent-front-end">
-                    <p>10%</p>
-                    <p>10%</p>
-                </div>
+        <div class="back-end">
+            <h2>BACK-END</h2>
+            <div class="icon-front-end">
+                <img src="images/php.png" alt="">
+                <p>10%</p>
+                <img src="images/sql.png" alt="">
+                <p>10%</p>
             </div>
-
-            <div id="competence" class="line_3"></div>
-
-            <div class="logiciel">
-                <h2>LOGICIEL</h2>
-                <div class="icon-front-end">
-                    <img src="images/figma.png" alt="">
-                    <p>70%</p>
-                    <img src="images/AI.png" alt="">
-                    <p>60%</p>
-                    <img src="images/vscode.png" alt="">
-                    <p>90%</p>
-                </div>
-                <div class="pourcent-logiciel-end">
-                    <p>70%</p>
-                    <p>60%</p>
-                    <p>90%</p>
-                </div>
+            <div class="pourcent-front-end">
+                <p>10%</p>
+                <p>10%</p>
             </div>
-        
+        </div>
+
+        <div id="competence" class="line_3"></div>
+
+        <div class="logiciel">
+            <h2>LOGICIEL</h2>
+            <div class="icon-front-end">
+                <img src="images/figma.png" alt="">
+                <p>70%</p>
+                <img src="images/AI.png" alt="">
+                <p>60%</p>
+                <img src="images/vscode.png" alt="">
+                <p>90%</p>
+            </div>
+            <div class="pourcent-logiciel-end">
+                <p>70%</p>
+                <p>60%</p>
+                <p>90%</p>
+            </div>
+        </div>
+
     </section>
 
     <section id="projet" class="projet">
@@ -128,16 +129,74 @@
             <div>
                 <img src="images/viewmycolors.png" alt="">
                 <img src="images/dalto.png" alt="">
-                <button>En Savoir Plus</button>
+                <button onclick="viewcolors()">En Savoir Plus</button>
             </div>
             <div>
                 <img src="images/logo_forge.png" alt="">
-                <button>En Savoir Plus</button>
+                <button onclick="viewcolors_2()">En Savoir Plus</button>
             </div>
             <div>
                 <p>FLEX FRAMEWORK</p>
                 <img src="images/flex_framework.png" alt="">
-                <button>En Savoir Plus</button>
+                <button onclick="viewcolors_3()">En Savoir Plus</button>
+            </div>
+        </div>
+
+        <!-- VIEWMYCOLORS -->
+
+        <div id="en-savoir-plus" class="en-savoir-plus">
+            <div class="plus-content">
+                <img src="images/dalto-first.png" alt="">
+                <img src="images/dalto-last.png" alt="">
+            </div>
+            <div class="logo_langue">
+                <img src="images/html.png" alt="">
+                <img src="images/javascript.png" alt="">
+                <img src="images/css.png" alt="">
+            </div>
+            <div class="button-plus" >
+                <button><a target="_blank" href="https://github.com/Lowky51/dalto_converter">Lien vers le depot GITHUB</a></button>
+                <button><a target="_blank" href="https://Lowky51.github.io/dalto_converter/index.html
+                    ">Visiter le Site</a></button>
+                <button onclick="close_viewcolors()">FERMER</button>
+            </div>
+        </div>
+
+        <!-- FORGE GUY LAMBERT -->
+
+        <div id="en-savoir-plus_2" class="en-savoir-plus">
+            <div class="plus-content">
+                <img src="images/forge-first.png" alt="">
+                <img src="images/forge-last.png" alt="">
+            </div>
+            <div class="logo_langue">
+                <img src="images/html.png" alt="">
+                <img src="images/javascript.png" alt="">
+                <img src="images/css.png" alt="">
+            </div>
+            <div class="button-plus" >
+                <button><a target="_blank" href="https://github.com/Lowky51/guy_lambert">Lien vers le depot GITHUB</a></button>
+                <button><a target="_blank" href="https://lowky51.github.io/guy_lambert/html/acceuil.html">Visiter le Site</a></button>
+                <button onclick="close_viewcolors_2()">FERMER</button>
+            </div>
+        </div>
+
+                <!-- FLEX FRAMEWORK -->
+
+        <div id="en-savoir-plus_3" class="en-savoir-plus">
+            <div class="plus-content">
+                <img src="images/flex-first.png" alt="">
+                <img src="images/flex-last.png" alt="">
+            </div>
+            <div class="logo_langue">
+                <img src="images/html.png" alt="">
+                <img src="images/javascript.png" alt="">
+                <img src="images/css.png" alt="">
+            </div>
+            <div class="button-plus" >
+                <button><a target="_blank" href="https://github.com/Lowky51/framework_css">Lien vers le depot GITHUB</a></button>
+                <button><a target="_blank" href="https://lowky51.github.io/framework_css/html/test_css.html">Visiter le Site</a></button>
+                <button onclick="close_viewcolors_3()">FERMER</button>
             </div>
         </div>
     </section>
@@ -155,16 +214,16 @@
             <input type="email" name="email" placeholder="Email" required>
             <textarea name="message" placeholder="Message" required></textarea>
             <button type="submit">Envoyer</button>
-          </form>
-          <div id="confirmation">Envoyé !</div>
+        </form>
+        <div id="confirmation">Envoyé !</div>
 
 
-          <div id="popup" class="popup">
+        <div id="popup" class="popup">
             <div class="popup-content">
-              <span class="close">&times;</span>
-              <p>Envoyé !</p>
+                <span class="close">&times;</span>
+                <p>Envoyé !</p>
             </div>
-          </div>
+        </div>
 
     </section>
 

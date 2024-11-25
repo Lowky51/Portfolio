@@ -63,3 +63,33 @@ document.getElementById('contactForm').addEventListener('submit', function(event
       document.getElementById('popup').style.display = 'none';
     }
   });
+
+
+  //////////////EN SAVOIR PLUS //////////////
+
+
+  function viewcolors() {
+    document.getElementById('en-savoir-plus').style.display = 'block'
+  }
+
+  function close_viewcolors() {
+    document.getElementById('en-savoir-plus').style.display = 'none'
+  }
+
+  function viewcolors_2() {
+    document.getElementById('en-savoir-plus_2').style.display = 'block'
+  }
+
+  function close_viewcolors_2() {
+    document.getElementById('en-savoir-plus_2').style.display = 'none'
+  }
+
+
+  function viewcolors_3() {
+    document.getElementById('en-savoir-plus_3').style.display = 'block'
+  }
+
+  function close_viewcolors_3() {
+    document.getElementById('en-savoir-plus_3').style.display = 'none'
+  }
+
