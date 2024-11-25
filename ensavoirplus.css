@@ -161,3 +161,15 @@
     }
 }
 
+
+/* Ajoutez ceci à votre fichier CSS */
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
