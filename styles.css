@@ -13,7 +13,7 @@ body {
 
 /********** NAVBAR ***********/
 .navbar {
-  width: 75vh;
+  width: 65vh;
   border-radius: 15px;
   justify-content: space-between;
   align-items: center;
@@ -290,6 +290,7 @@ label {
   text-align: center;
   font-size: 1.5em;
   margin-top: 5vh;
+  padding: 10px;
 }
 
 .line {
